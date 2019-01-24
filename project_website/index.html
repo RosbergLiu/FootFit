@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html> 
+	<head>
+		<title>Columbia University EECS E4764 IoT Project Report #5</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<!-- <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span> -->
+							<h1 id="title">Footfit</h1>
+							<p>Columbia University <br>
+								EECS E4764 Fall'18 Internet of Things<br>
+								Intelligent and Connected Systems<br>
+								Team 5 Project Report
+							</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Abstract</span></a></li>
+								<li><a href="#motivation" id="motivation-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Motivation</span></a></li>
+								<li><a href="#system" id="system-link" class="skel-layers-ignoreHref"><span class="icon fa-th">System</span></a></li>
+								<li><a href="#results" id="results-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Results</span></a></li>
+								<li><a href="#references" id="references-link" class="skel-layers-ignoreHref"><span class="icon fa-th">References</span></a></li>
+								<li><a href="#team" id="team-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Our Team</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/oGmk_C82kpU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+								<h2 class="alt">Footfit</h2>
+								<p>Project wonderland is to create an in-shoe pedobarography foot pressure solution</p>
+								<p>FootFit enable you to acquire pressure data using a pair of shoe pads with a sensor grid, and provide various analytical results of your gait and foot pressure distribution heatmaps.</p>
+								
+
+							<footer>
+								<a href="#motivation" class="button scrolly">Motivation</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="motivation" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Motivation</h2>
+							</header>
+
+							<p align="left">For years, people suffer from leg or ankle injuries typically go through long term walk rehabilitation. During this vital process of recovery, in order to optimize the rehab schedule and validate fitness, status like natural behavior and stimulus reaction of individual patient, should be closely monitored. However, it’s currently mainly achieved by visual observation from nurse or health care stuff; the data is not quantified, hence not accurate, and, the whole process is less achievable while care personnel are busy keeping patient from staggering or even falling down.<br/>Here we try to automate this process by monitoring one key aspect of feedback during walk rehab: foot pressure. Different pressure distribution reveals different gaits, giving medics a clear understanding of patient’s current status. However, one typical drawback of these foot pressure mapping equipment is that they are mostly stationary platform, result in inconvenience and more importantly, unnatural gait. Alternatively, an in-shoe solution provides an advantage as it reduces the risk of patients targeting the platform when walking.
+
+</p>
+
+
+
+						</div>
+					</section>
+					
+					
+					<section id="system" class="three">
+						<div class="container">
+
+							<header>
+								<h2>System</h2>
+							</header>
+							
+							<a href="#" class="image"><img src="images/jiegou.jpeg" alt="" /></a>
+							
+							<h3 align="left">Architecture</h3>
+
+							<p align="left">
+							Piezoresitive Sensors -->Converter Module-->Master MCU -->Wireless Module -->Slave MCU -->AWS Cloud -->Android Mobile
+
+
+						</p>
+							
+							
+							<h3 align="left">Technical Components</h3>
+
+							<p align="left">HARDWARE:piezorisitive sensors,Multiplexer,ESP32,nRF24L01,ESP8266<br>
+							SOFTWARE:AWS,Android<br>ALGORITHMS:Heatmap generation, Random Forests</p>
+
+							
+							<h3 align="left">Prototype</h3>
+
+							<a href="#" class="image"><img src="images/prototype.jpeg" alt="" /></a>
+							
+							
+							
+						</div>
+					</section>
+					
+					
+					<section id="results" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Results</h2>
+							</header>
+
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/result.jpg" alt="" /></a>
+								<header>
+									<h3>Here we show the heatmap of standing normally, pressure distribution of putting more weight on the left side and do some tests about walking patterns. Then we also give the recommendation on how to choose your shoes based on the testing results.</h3>
+								</header>
+							</article>
+							
+							
+						</div>
+					</section>
+					
+					<section id="references" class="three">
+						<div class="container">
+
+							<header>
+								<h2>References</h2>
+							</header>
+
+							<!-- <p align="left">Blah blah blah</p> -->
+							<a href=http://www.cbsr.ia.ac.cn/users/szheng/?page_id=389>http://www.cbsr.ia.ac.cn/</a>
+							<a href=https://www.iee.lu/cn/products/sports-healthcare/smart-foot-sensor>https://www.iee.lu/cn/products/sports-healthcare/smart-foot-sensor</a>
+							<a href=https://www.tekscan.com/application-group/medical/foot-function>https://www.tekscan.com/application-group/medical/foot-function</a>
+							
+
+
+
+						</div>
+					</section>
+					
+
+				<!-- About Me -->
+					<section id="team" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Our Team</h2>
+							</header>
+
+							<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/photo.jpg" alt="" /></a>
+										<header>
+											<h3>Mengchao Hao</h3>
+											<p>Mengchao Hao is a master student majoring in Electrical Engineering in Columbia University</p>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/jy.jpeg" alt="" /></a>
+										<header>
+											<h3>Jiyuan Yang</h3>
+											<p>A master student majoring in Electrical Engineering in Columbia University<br>LinkedI profile:<br><a href=www.linkedin.com/in/jiyuanyang>www.linkedin.com/in/jiyuanyang</p>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/mengyu.jpeg" alt="" /></a>
+										<header>
+											<h3>Mengyu Liu</h3>
+											<p>Electrical Engineering student, focus on Robotics</p>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p align="left">
+								<strong>Mengchao Hao: </strong>mengchao.hao@columbia.edu</br>
+								<strong>Mengyu Liu:</strong>ml4202@columbia.edu</br>
+								<strong>Jiyuan Yang:</strong>jy2930@columbia.edu</br>
+								
+							</br>
+								<strong>Columbia University </strong><a href="http://www.ee.columbia.edu">Department of Electrical Engineering</a><br>
+								<!-- <strong>Class Website:</strong>
+									<a href="https://edblogs.columbia.edu/eecs4764-001-2018-3/">Columbia University EECS E4764 Fall '18 IoT</a></br> -->
+								<strong>Instructor:</strong> <a href="http://fredjiang.com/">Professsor Xiaofan (Fred) Jiang</a>
+							</p>
+							
+
+							<!-- <form method="post" action="#">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form> -->
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; IoT Project | All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
